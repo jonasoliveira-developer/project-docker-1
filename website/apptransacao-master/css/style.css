@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+:root {
+	--titulo-font: 'Arimo', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#container{
+	margin-top: 50px;
+	padding: 20px;
+	max-width:600px;
+	background-color: #BEBBBB;
+	border-radius: 5px;
+}
+#container h1{
+	text-align: center;
+}
+/*ESTILIZANDO O PAINEL DE DESPESAS*/
+#painel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top:40px;
+}
+.card {
+	margin: 0.5rem;
+	padding:0.3rem;
+	width: 15rem;
+	height: 5rem;
+	border:1px solid #ccc;
+	font-family: Arial;
+	background-color: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0.2rem 0.1rem 0.1rem rgba(0,0,0,0.5);
+	color: #FFF;
+}
+.card h2{
+	margin-left:0.5rem;
+	color: #FFF;
+}
+.saldo {
+	background-color:#2C9D0F;
+}
+.receita{
+	background-color:#1F47D8;
+}
+.despesa {
+	background-color:#F92727;
+}
+.card span{
+	font-size:1.5rem;
+	margin-left:0.5rem;
+}
+/*LISTANDO INFORMAÇÕES*/
+#listagem h2 {
+	margin-top: 1rem;
+	font-family:var(--titulo-font);
+}
+
+#listagem ul{
+	margin: 0.5rem;
+	list-style: none;
+}
+#listagem li{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.4rem;
+	margin: 0.2rem;
+	border-radius: 0.1rem;
+	background-color: #FFF;
+	box-shadow: 0.2rem 0.1rem 0.1rem rgba(0,0,0,0.5);
+}
+#listagem li span{
+	width: 30%;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+#listagem li span:first-child{
+	width: 50%;
+}
+#listagem li button{
+	padding: 0.3rem;
+	color: #F92727;
+	border: none;
+	background-color:#CCC;
+	cursor: pointer;
+}
+#listagem li button:hover{
+	background-color:#F92727;
+	color: #FFF;
+}
+/*ESTILIZANDO OS INPUTS DE ENVIO*/
+hr{
+	margin-top: 3rem;
+}
+form h3{
+	margin-top: 2rem;
+	font-size: 1.4rem;
+	font-style: 'Roboto';
+}
+
+input[type=text]{
+	width:63%;
+	padding:8px;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	cursor: pointer;
+
+}
+input[type=number]{
+	width:36%;
+	padding:8px;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	cursor: pointer;
+
+}
+input[type=number]::placeholder{
+	color:red;
+}
+
+
+#enviar{
+	width: 100%;
+	border: none;
+	padding: 9px;
+	margin-top: 10px;
+	font-size: 1.5rem;
+	border-radius: 3px;
+	background-color:#72299F;
+	color: #FFF;
+	cursor: pointer;
+}
+
+@media(max-width: 650px) {
+	#container{
+		width: 100%;
+	}
+	#painel {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.card{
+		width: 100%;
+		text-align: center;
+	}
+	form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	input[type=text]{
+		width:100%;
+
+	}
+	input[type=number]{
+		margin-top: 5px;
+		width:100%;
+
+	}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+Esse é um simples sistema de controle financeiro.No javascript utilizei os conceitos estudados sobre MAP,FILTER,REDUCE para fazer as funcionalidades.Também ultilizei com CSS media querys para ajustar a responsividade e flex-box para posicionar os elementos. Esse projeto foi desafiador para mim pois fiz desde o protótipo no FIGMA ao JAVASCRIPT.
+Foi a primeira vez que tentei fazer um layout e sinto que preciso melhorar,acrescentei o figma as minha stack 
+de estudo.

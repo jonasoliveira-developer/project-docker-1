@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="short curt icon" href="">
+	<link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Dev-Transação</title>
+</head>
+<body>
+	
+	<div id="container">	
+		<h1>Dev-Transações</h1>
+		<section id="painel">
+			<div class="saldo card">
+				<h2>Saldo</h2>
+				<span>0.00</span>
+			</div>
+			<div class="receita card">
+				<h2>Receita</h2>
+				<span>0.00</span>
+			</div>
+			<div class="despesa card">
+				<h2>Despesas</h2>
+				<span>0.00</span>
+			</div>
+		</section><!--FIM PAINEL-->
+		<section id="listagem">
+			<h2>Transações</h2>
+		   <ul id="ul">
+			
+		   </ul>
+	    </section>
+	    <hr>
+	    <form id="form">
+	    	<h3>Casdastre uma transação</h3>
+	    	<input type="text" name="transacao" id="descricao" placeholder="digite o tipo">
+	    	<input type="number" id="valorInput" placeholder="digite(-) para negativos"  step="any">
+	    	 <button id="enviar">Cadastrar</button>
+	    </form>
+	</div>
+	
+
+	<script src="js/app.js"></script>
+</body>
+</html>
